@@ -11,44 +11,64 @@
     <main>
       <h1>Say Hello!</h1>
       <form>
-        <label for="name">Your name</label><br />
-        <input
-          type="text"
-          class="name"
-          name="name"
-          placeholder="Enter your name"
-        /><br />
-        <label for="email">Email:</label>
-        <input
-          type="email"
-          class="email"
-          name="email"
-          placeholder="Enter your email address"
-        />
-        <label for="needed-services">Needed Services</label>
-        <select
-          name="needed-services"
-          class="needed-services"
-          placeholder="Choose services"
-        >
-          <option value="hair">Hair</option>
-          <option value="makeup">Make Up</option>
-          <option value="styling">Styling</option>
-          <option value="photo">Photos</option>
-        </select>
-        <label for="budget">Select Budget</label>
-        <input
-          type="number"
-          class="budget"
-          name="budget"
-          min="25"
-          max="500"
-          placeholder="Select budget"
-        />
-        <label for="w3review">Message</label>
-        <textarea class="message" name="message" rows="15" cols="20">
-        "Your message here..."
-        </textarea>
+        <div class="form-element">
+          <label for="name">Your Name</label>
+          <input
+            required
+            type="text"
+            class="name"
+            name="name"
+            placeholder="Enter your name"
+          />
+        </div>
+        <div class="form-element">
+          <label for="email">Email</label>
+          <input
+            required
+            type="email"
+            class="email"
+            name="email"
+            placeholder="Enter your email address"
+          />
+        </div>
+        <div class="form-element select">
+          <label for="needed-services">Needed Services</label>
+          <select name="needed-services" required class="needed-services">
+            <option value="">Choose services</option>
+            <option value="hair">Hair</option>
+            <option value="makeup">Make Up</option>
+            <option value="styling">Styling</option>
+            <option value="photo">Photos</option>
+          </select>
+        </div>
+        <div class="form-element select">
+          <label for="budget">Select Budget</label>
+          <input
+            required
+            type="number"
+            class="budget"
+            name="budget"
+            min="25"
+            max="500"
+            placeholder="Select budget"
+          />
+        </div>
+        <div class="form-element">
+          <label for="message">Message</label>
+          <textarea
+            class="message"
+            name="message"
+            rows="6"
+            cols="27"
+            placeholder="Your message here..."
+          >
+          </textarea>
+        </div>
+        <div class="submit">
+          <button type="submit" value="Submit">
+            Submit <img class="arrow" src="arrow.svg" />
+          </button>
+        </div>
       </form>
     </main>
   </body>

@@ -4,7 +4,52 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Static Template</title>
+    <link rel="stylesheet" href="style.css" />
+    <title>Stylish Form</title>
   </head>
-  <body></body>
+  <body>
+    <main>
+      <h1>Say Hello!</h1>
+      <form>
+        <label for="name">Your name</label><br />
+        <input
+          type="text"
+          class="name"
+          name="name"
+          placeholder="Enter your name"
+        /><br />
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          class="email"
+          name="email"
+          placeholder="Enter your email address"
+        />
+        <label for="needed-services">Needed Services</label>
+        <select
+          name="needed-services"
+          class="needed-services"
+          placeholder="Choose services"
+        >
+          <option value="hair">Hair</option>
+          <option value="makeup">Make Up</option>
+          <option value="styling">Styling</option>
+          <option value="photo">Photos</option>
+        </select>
+        <label for="budget">Select Budget</label>
+        <input
+          type="number"
+          class="budget"
+          name="budget"
+          min="25"
+          max="500"
+          placeholder="Select budget"
+        />
+        <label for="w3review">Message</label>
+        <textarea class="message" name="message" rows="15" cols="20">
+        "Your message here..."
+        </textarea>
+      </form>
+    </main>
+  </body>
 </html>
